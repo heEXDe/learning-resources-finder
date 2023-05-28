@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The Little Quiz in Political Philosophy</title>
+  <style>
+    body {
+        background-color: rgb(120, 120, 120);
+        max-width: 100%;
+        font-family: "Mono";
+        color: rgb(255, 255, 255);
+        text-align:center
+      }
+    /* body.c02 {background-color: rgb(120, 120, 120)} */
+    h1   {font-family: "Mono"; color: rgb(255, 255, 255); text-align:center}
+    h2   {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
+    h3   {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
+    p    {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
+    p.c2    {font-family: "Mono";color: rgb(255, 255, 255); }
+    button {background-color: rgb(100, 100, 100); border: none; color: white; 
+        padding: 15px 32px; text-align: center; text-decoration: none;
+        display: inline-block; font-size: 16px; margin: 4px 2px;
+        cursor: pointer; border-radius: 4px; width: 30%;}
+    div.center {text-align:center; margin:auto;}
+    th, td {padding: 15px;}
+    footer {
+        display:flex;
+        justify-content: center;
+        /* 
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        */
+        font-family: "Mono";
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 200px;
+      }
+    /* 
+    a {text-decoration: none;}
+    i.c1 {text-align:center}
+    */
+  </style>
+</head>
+<body>
+    <h1>Learning Resources Finder</h1>
+    <div id="div_main" class="center">
+      <hr>
+      <p id="p1">
+        Learning Resources Finder is a simple open source tool to find learning materials (tutorials, courses), depending on your interests and goals. <br>
+        The app is hosted on IPFS (Inter Planetary File System)- a decentralized protocol. <br>
+        Start by choosing any of the options bellow.
+      </p>
+      <hr>
+      <div id="div_1">
+        <h2 id="h2WhatToLearn">What would you like to learn?</h2>
+        <button id="btnProgramming">Programming</button>
+        <button id="btnFLang">Foreign language</button>
+        <button id="btnMath">Mathematics</button>
+        <button id="btnEngin">Engineering</button>
+        <button id="btnPhy">Physics</button>
+        <button id="btnChem">Chemistry</button>
+        <button id="btnWrit">Writing</button>
+      </div>
+      <div id="div_2"></div>
+      <div id="div_3"></div>
+      <div id="div_4"></div>
+      <footer>
+        MIT license, 
+        Author: <a href="https://github.com/heEXDe" target="_blank" style="text-decoration:none">https://github.com/heEXDe</a>
+      </footer>
+    </div>
+</body>
+<script>
+// get & create buttons
+var btnWebDevelop = document.createElement("button");
+var btnGames = document.createElement("button");
+var btnMachLearn = document.createElement("button");
+var btnDataScience = document.createElement("button");
+var btnEnglish = document.createElement("button");
+var btnSpanish = document.createElement("button");
+var btnFrench = document.createElement("button");
+var btnGerman = document.createElement("button");
+var btnItalian = document.createElement("button");
+
+//eventlisteners
+document.getElementById('btnProgramming').addEventListener('click', function(){ ch_page("btnProgramming");});
+document.getElementById('btnFLang').addEventListener('click', function(){ ch_page("btnFLang");});
+document.getElementById('btnMath').addEventListener('click', function(){ ch_page("btnMath");});
+document.getElementById('btnEngin').addEventListener('click', function(){ ch_page("btnEngin");});
+document.getElementById('btnPhy').addEventListener('click', function(){ ch_page("btnPhy");});
+document.getElementById('btnChem').addEventListener('click', function(){ ch_page("btnChem");});
+document.getElementById('btnWrit').addEventListener('click', function(){ ch_page("btnWrit");});
+
+
+// set inner text
+btnWebDevelop.innerHTML = "Web development";
+btnGames.innerHTML = "Games";
+btnMachLearn.innerHTML = "Machine learning";
+btnDataScience.innerHTML = "Data Science";
+btnEnglish.innerHTML = "English";
+btnSpanish.innerHTML = "Spanish";
+btnFrench.innerHTML = "French";
+btnGerman.innerHTML = "German";
+btnItalian.innerHTML = "Italian";
+
+// set id for elements
+btnWebDevelop.setAttribute("id", "btnWebDevelop");
+btnGames.setAttribute("id", "btnGames");
+btnMachLearn.setAttribute("id", "btnMachLearn");
+btnDataScience.setAttribute("id", "btnDataScience");
+btnEnglish.setAttribute("id", "btnEnglish");
+btnSpanish.setAttribute("id", "btnSpanish");
+btnFrench.setAttribute("id", "btnFrench");
+btnGerman.setAttribute("id", "btnGerman");
+btnItalian.setAttribute("id", "btnItalian");
+
+function ch_page(btnPushedName){
+  document.getElementById('p1').innerHTML = 'Refreshing the page takes you back to the beginning.'
+  switch (btnPushedName){
+    case "btnProgramming":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      div_1.append(btnWebDevelop,btnMachLearn, btnGames, btnDataScience);
+      document.getElementById('btnWebDevelop').addEventListener('click', function(){ ch_page("btnWebDevelop");});
+      document.getElementById('btnGames').addEventListener('click', function(){ ch_page("btnGames");});
+      document.getElementById('btnMachLearn').addEventListener('click', function(){ ch_page("btnMachLearn");});
+      document.getElementById('btnDataScience').addEventListener('click', function(){ ch_page("btnDataScience");});
+      break;
+    case "btnFLang":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      div_1.append(btnEnglish, btnSpanish, btnFrench, btnGerman, btnItalian);
+      document.getElementById('btnEnglish').addEventListener('click', function(){ ch_page("btnEnglish");});
+      document.getElementById('btnSpanish').addEventListener('click', function(){ ch_page("btnSpanish");});
+      document.getElementById('btnFrench').addEventListener('click', function(){ ch_page("btnFrench");});
+      document.getElementById('btnGerman').addEventListener('click', function(){ ch_page("btnGerman");});
+      document.getElementById('btnItalian').addEventListener('click', function(){ ch_page("btnItalian");}); 
+      break;
+    case "btnMath":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      document.getElementById("div_1").innerHTML += "<h2>Khan Academy</h2>(free)<br><a href=\"https://www.khanacademy.org/math\" target=\"_blank\" style=\"text-decoration:none\">Math</a><br><a href=\"https://khanacademy.org/math/k-8-grades\" target=\"_blank\" style=\"text-decoration:none\">Math: pre-k - 8th grade</a><br><a href=\"https://www.khanacademy.org/math/get-ready-courses\" target=\"_blank\" style=\"text-decoration:none\">Math: Get ready courses</a><br><h2>Brilliant</h2>(paid)<br><a href=\"https://brilliant.org/s/math/\" target=\"_blank\" style=\"text-decoration:none\">Math</a><h2>Wikibooks</h2>(free)<br><a href=\"https://en.wikibooks.org/wiki/Subject:Mathematics\" target=\"_blank\" style=\"text-decoration:none\">Math</a>";
+      break;
+    case "btnEngin":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      document.getElementById("div_1").innerHTML += "<h2>Khan Academy</h2>(free)<br><a href=\"https://www.khanacademy.org/science/electrical-engineering\" target=\"_blank\" style=\"text-decoration:none\">Electrical engineering</a><br><h2>Wikibooks</h2>(free)<br><a href=\"https://en.wikibooks.org/wiki/Subject:Engineering\" target=\"_blank\" style=\"text-decoration:none\">Engineering</a>"
+      break;
+    case "btnPhy":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnChem":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnWrit":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnWebDevelop":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnGames":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnMachLearn":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnDataScience":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnEnglish":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnSpanish":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnFrench":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnGerman":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+    case "btnItalian":
+      while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      break;
+  }
+}
+
+</script>
+</html>
+
