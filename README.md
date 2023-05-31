@@ -2,7 +2,7 @@
 A simple single-page web app for finding learning resources, depending on your interests. Hosted on IPFS.
 ## IPFS
 current CID:
-QmSLHGuaxMPBx2xGYXyTi9JsC5jrQHcePhmuygKcHp9UBH
+QmdYMk934PwAjh2pV7aozaNCSp3K1WHAJW3JEzvRosTs5a
 
 Gateways:
-https://ipfs.io/ipfs/QmSLHGuaxMPBx2xGYXyTi9JsC5jrQHcePhmuygKcHp9UBH
+https://ipfs.io/ipfs/QmdYMk934PwAjh2pV7aozaNCSp3K1WHAJW3JEzvRosTs5a
