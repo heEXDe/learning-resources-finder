@@ -5,9 +5,9 @@ What is IPFS: [https://ipfs.tech/](https://ipfs.tech/)
 
 current CID:
 
-QmTD2hpcvypCLwE7mzxxbwTcRgqGJomwaNwTkEdqHA3Fpy
+QmdauUP94Ggi3BaDmNqVdkwBpyiMKPwYMD7BJS87gTNpo1
 
 Gateways:
 
-https://ipfs.io/ipfs/QmTD2hpcvypCLwE7mzxxbwTcRgqGJomwaNwTkEdqHA3Fpy
-https://dweb.link/ipfs/QmTD2hpcvypCLwE7mzxxbwTcRgqGJomwaNwTkEdqHA3Fpy
+https://ipfs.io/ipfs/QmdauUP94Ggi3BaDmNqVdkwBpyiMKPwYMD7BJS87gTNpo1
+https://dweb.link/ipfs/QmdauUP94Ggi3BaDmNqVdkwBpyiMKPwYMD7BJS87gTNpo1
