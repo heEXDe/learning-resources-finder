@@ -13,5 +13,6 @@ Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
-https://a5lp77tmwwj5feog3wrybrxgjfjddj7xhjbinj4toj5qxpzzv3ia.{gateway address}/B1b__my1k9KRxt2jgMbmSVIxp_c6Qoank3J7C785rtA
+
+a5lp77tmwwj5feog3wrybrxgjfjddj7xhjbinj4toj5qxpzzv3ia.{gateway address}/B1b__my1k9KRxt2jgMbmSVIxp_c6Qoank3J7C785rtA
 
